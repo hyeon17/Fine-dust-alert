@@ -21,7 +21,8 @@
 상태 관리: Recoil
 서버 통신: SWR
 UI 라이브러리: Material UI
-CSS: Sass
+CSS: emotion
+배포: Vercel
 
 ## 3. 프로젝트 구조
 
