@@ -6,14 +6,17 @@ import { ThemeProvider } from '@emotion/react';
 import theme from '@/styles/theme.styles.ts';
 import GlobalStyle from '@/styles/Global.styles.ts';
 import { Global } from '@emotion/react';
+import { RecoilRoot } from 'recoil';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <Global styles={GlobalStyle} />
-      <HelmetProvider>
-        <App />
-      </HelmetProvider>
-    </ThemeProvider>
+    <RecoilRoot>
+      <ThemeProvider theme={theme}>
+        <Global styles={GlobalStyle} />
+        <HelmetProvider>
+          <App />
+        </HelmetProvider>
+      </ThemeProvider>
+    </RecoilRoot>
   </React.StrictMode>,
 );
